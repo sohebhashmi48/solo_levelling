@@ -1,0 +1,131 @@
+/* Import custom fonts */
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+
+/* Style for pseudo-elements */
+* ::before, ::after{
+    margin: 0;
+    padding: 0;
+    transition: .3s;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+/* Style for background video */
+video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    pointer-events: none;
+    z-index: -1;
+    transition: 1s;
+}
+
+/* Style for container */
+.container {
+    max-width: 950px;
+    margin: auto;
+    color: #fff;
+}
+
+/* Style for navigation bar */
+.navbar {
+    padding: 12px 10px;
+}
+
+/* Style for container inside navigation bar */
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+/* Style for navigation bar logo */
+.navbar .logo {
+    font-family:  'Arial Narrow Bold', sans-serif,'Poppins', sans-serif;
+    text-decoration: none;
+    font-size: 2rem;
+    color: #fff;
+}
+
+/* Style for navigation bar list */
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+}
+
+/* Style for navigation bar list items */
+.navbar ul a {
+    display: block;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 8px 16px;
+    font-family: 'Keshiki',sans-serif;
+    position: relative;
+    color: #fff;
+}
+
+/* Style for non-hovered navigation bar list items when hovering over another item */
+.navbar ul:has(a:hover) a:not(:hover) {
+    filter: blur(10px);
+}
+
+/* Style for page content */
+.page-content {
+    text-align: center;
+    margin-top: 12rem;
+    padding: 0 10px;
+}
+
+/* Style for page content inner content heading */
+.page-content .inner-content .heading {
+    font-size: 8rem;
+    font-family: 'sd-asian';
+}
+
+/* Style for page content inner content paragraph */
+.page-content .inner-content p {
+
+    font-family: 'sd-asian','Poppins', sans-serif;
+    margin-top: 7%;
+}
+
+/* Style for page content buttons */
+.page-content .buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Style for page content buttons links */
+.page-content .buttons a {
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    margin: 0 16px;
+    padding: 10px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+    min-width: 120px;
+    text-align: center;
+    position: relative;
+    backdrop-filter: blur(60px);
+    overflow: hidden;
+    z-index: 1;
+    border: 1px solid #ffffff;
+}
+
+/* Style for active page content buttons links */
+.page-content .buttons a.active {
+    background-color: #e1340d;
+}
+.para{
+    font-family: 'keshiki',sans-serif;
+    color: #949393;
+}
+.heading{
+    font-family: 'Protest Riot', sans-serif;
+}
